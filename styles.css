@@ -1,0 +1,37 @@
+
+
+body {
+    padding-top: 3%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+
+.Game-Over {
+    padding: 0;
+    margin: 0;
+    background-color: red;
+    color: white;
+    visibility: visible;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.ingame {
+    height: 0px;
+}
+
+.score {
+    position : absolute;
+    bottom: 10%;
+}

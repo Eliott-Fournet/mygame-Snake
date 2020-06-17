@@ -2,9 +2,11 @@ console.log("game.js is linked")
 
 class Game {
 
-    constructor () {
-        this.player = new Snake();
+    constructor (speed) {
+        this.player = new Snake(speed);
         this.foodPieces = [];
+        this.GameOver = false;
+        this.score = 0;
     }    
 
 
@@ -26,7 +28,7 @@ class Game {
 
     drawGame() {
 
-        this.drawTheSnake();
+        //this.drawTheSnake();
 
         this.foodPieces.forEach((element) => {
 
@@ -35,6 +37,10 @@ class Game {
         });
 
         this.checkCollisions();
+
+        this.drawTheSnake();
+
+        this.loseTheGame();
         
     }
 
@@ -51,7 +57,7 @@ class Game {
                 this.foodPieces.splice(this.foodPieces.indexOf(element), 1);
                 this.foodPieces.push(new foodPiece(Math.floor(Math.random()*WIDTH), Math.floor(Math.random()*HEIGHT)));
                 this.player.snakeLength ++;
-
+                this.score ++;
 
             }
 
@@ -60,5 +66,12 @@ class Game {
 
     }
 
+    loseTheGame() {
+
+        if (this.player.cannibalism === true) {
+            this.GameOver = true;
+        }
+
+    }
 
 }
