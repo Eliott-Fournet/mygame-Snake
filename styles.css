@@ -1,7 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Staatliches&display=swap');
 
 body {
-    padding-top: 3%;
+    padding-top: 4%;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -12,6 +13,7 @@ body {
 
 
 .Game-Over {
+
     padding: 0;
     margin: 0;
     background-color: red;
@@ -24,7 +26,48 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /*align-content: center;*/
+}
+
+.Game-Over h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 5em;
+    margin: 0;
+}
+
+.Game-Over p {
+    font-family: 'Staatliches', cursive;
+    padding: 10%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    font-size: 190%;
+    margin: 7% 0 10%;
+}
+
+.button-container {
+    font-family: 'MuseoModerno', cursive;
+    display: flex;
+    flex-direction: row;
     align-content: center;
+    justify-content: space-evenly;
+    height: 25%;
+}
+
+.box-button {
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-button button {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    height: 3em;
+    width: 12em; 
+    border: none;
+    border-radius: 15%;
 }
 
 .ingame {
@@ -33,5 +76,12 @@ body {
 
 .score {
     position : absolute;
-    bottom: 10%;
+    bottom: 8%;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.title {
+    position : absolute;
+    top: 0;
+    font-family: 'MuseoModerno', cursive;
 }

@@ -19,6 +19,7 @@ function gameOver() {
     
         $(".Game-Over").css("height", HEIGHT + 'px');
         $(".Game-Over").css("width", WIDTH + 'px');
+        $(".button-container").css("width", WIDTH + 'px');
     
       });
 

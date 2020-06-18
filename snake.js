@@ -68,6 +68,7 @@ class Snake {
     drawBody () {
 
         this.bodyPositions = [];
+        console.log(this.headPositions);
 
         for (let i = 1; i < this.snakeLength; i++) {
 
