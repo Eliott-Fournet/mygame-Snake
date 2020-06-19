@@ -8,13 +8,37 @@
     <script src="constants.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script defer src=https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.sound.min.js></script>
+    <script defer src=https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.dom.min.js></script>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
 </head>
 <body>
+        <div class = "welcome">
+            <h1>Welcome to <span>RobertoSnake</span></h1>
+            <div class = "quotes">
+                <p class = "quote">"This game is literally the best in the world"</p>
+                <p class = "author">- Electronic Arts CTO</p>
+                <p class = "quote">"I wish I got bitten by Roberto instead"</p>
+                <p class = "author">- Spider-Man</p>
+            </div>
+            <div class = "button-container">
+                <div class="box-button">
+                    <button class = "easy">Easy</button>
+                    <button class = "medium">Medium</button>
+                </div>
+                <div class="box-button">
+                    <button class = "hard">Hard</button>
+                    <button class = "legend">Legend</button>
+                </div>
+            </div>
+        </div> 
+
+
         <script src="gameOver.js"></script>
         <div class = "Game-Over">
             <h1>Game Over</h1>
             <P>You lost, come on you can do better than that!</P>
+            <p class = "highScore"></p>
             <div class = "button-container">
                 <div class="box-button">
                     <button class = "easy">Easy</button>

@@ -58,6 +58,7 @@ class Game {
                 this.foodPieces.push(new foodPiece(Math.floor(Math.random()*WIDTH), Math.floor(Math.random()*HEIGHT)));
                 this.player.snakeLength ++;
                 this.score ++;
+                this.player.colour = Math.floor(Math.random()*12);
 
             }
 
@@ -69,6 +70,9 @@ class Game {
     loseTheGame() {
 
         if (this.player.cannibalism === true) {
+            if (highScore < this.score) {
+                highScore = this.score;
+            };
             this.GameOver = true;
         }
 

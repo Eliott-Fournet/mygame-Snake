@@ -1,3 +1,6 @@
-const WIDTH = 700;
 
-const HEIGHT = 700;
+
+
+    const WIDTH =  700;
+
+    const HEIGHT = WIDTH;

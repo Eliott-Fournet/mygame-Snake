@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
 
 body {
-    padding-top: 4%;
+    padding-top: 5%;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -46,6 +48,8 @@ body {
 
 .button-container {
     font-family: 'MuseoModerno', cursive;
+    position: absolute;
+    bottom: 10%;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -76,7 +80,7 @@ body {
 
 .score {
     position : absolute;
-    bottom: 8%;
+    bottom: 1%;
     font-family: 'MuseoModerno', cursive;
 }
 
@@ -84,4 +88,88 @@ body {
     position : absolute;
     top: 0;
     font-family: 'MuseoModerno', cursive;
+}
+
+.welcome {
+
+    padding: 0;
+    margin: 0;
+    background-color: #2147FC;
+    color: white;
+    visibility: visible;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcome h1 {
+    font-family: 'MuseoModerno', cursive;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.welcome h1 span {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.quotes {
+    position: absolute;
+    top: 31%;
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+}
+
+.quote {
+    margin-left: 5%;
+    font-weight: lighter; 
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.author {
+    text-align: end;
+    margin-right: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin-top: 1%;
+}
+
+
+.hard:hover {
+    color:white;
+    background-color: #F02BB5;
+}
+
+.medium:hover {
+    color:white;
+    background-color: #FFFF00;
+}
+
+.easy:hover {
+    color:white;
+    background-color: #00FA09;
+}
+
+.legend:hover {
+    color:white;
+    background-color:black;
+}
+
+.highScore {
+    position: absolute;
+    bottom: 38%;
 }
