@@ -59,6 +59,7 @@ class Game {
                 this.player.snakeLength ++;
                 this.score ++;
                 this.player.colour = Math.floor(Math.random()*12);
+                foodSound.play();
 
             }
 

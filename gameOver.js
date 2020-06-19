@@ -11,6 +11,11 @@ function gameOver() {
             $(".Game-Over").css("visibility", "visible");
             menuMusic.loop();
             gameMusic.stop();
+            menuMusic.setVolume(0.5);
+            gameOverSound.play();
+            gameOverSound.setVolume(5);
+            explosion.play();
+            explosion.setVolume(0.6);
             
     
         }else {

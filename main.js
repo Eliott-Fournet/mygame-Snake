@@ -9,7 +9,10 @@ let menuMusic;
 function preload() {
     menuMusic = loadSound('menuMusic.mp3');
     gameMusic = loadSound('musicGame.mp3');
-    startMusic = loadSound('startMusic.mp3')
+    startMusic = loadSound('startMusic.mp3');
+    foodSound = loadSound('foodSound.mp3');
+    gameOverSound = loadSound('GameOver.mp3');
+    explosion = loadSound('explosion.mp3');
 }
 
 function setup() {
@@ -50,7 +53,7 @@ $(".easy").click(function(){
     newGame = new Game(1);
     gameMusic.loop();
     startMusic.play();
-    startMusic.setVolume(10);
+    startMusic.setVolume(12);
 });
 
 $(".medium").click(function(){
